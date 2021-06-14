@@ -1,0 +1,134 @@
+*{
+    caret-color: transparent;
+    /*color:#f0f4f8;*/
+}
+input,textarea{
+  caret-color: gray;
+  
+}
+body,header,h1,ul,main,#right,#left,.col{
+    margin:0 !important;
+    padding:0 !important;
+}
+option{
+  color:#161b22
+}
+.text-light-gray{
+  color:#f0f4f8 !important;
+}
+.text-dark-gray{
+  color: #d5d6d6 !important;
+}
+.text-link{
+  color: #7088b8 !important;
+}
+/* Gray */
+.button-gray{
+  color: #d5d6d6 !important;
+  border: #5f5e5e thin solid;
+  background-color: #161b22 ;
+}
+.button-gray:hover{
+  color: #d5d6d6 !important;
+  border: #d5d6d6 thin solid;
+  background-color: #5f5e5e;
+}
+/*  RED */
+.button-red{
+  color: #ffffff !important;
+  border: #5f5e5e thin solid;
+  background-color: #e25941;
+}
+.button-red:hover{
+  color: #ffffff !important;
+  border: #d5d6d6 thin solid;
+  background-color: tomato;
+}
+/*  GREEN */
+.button-green{
+  color: #ffffff !important;
+  border: #5f5e5e thin solid;
+  background-color: #30ac49;
+}
+.button-green:hover{
+  color: #ffffff !important;
+  border: #d5d6d6 thin solid;
+  background-color: #38c555;
+}
+
+.button{
+  padding:10px !important;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: none !important;
+}
+.button-sm{
+  padding:5px !important;
+  border-radius: 5px;
+  font-size: 1em;
+  text-decoration: none !important;
+}
+
+  ul{
+      list-style: none
+  }
+  li div{
+    padding-left: 1em !important;
+  }
+  li div:hover{
+    background-color: #45494c !important;
+    cursor: pointer;
+  }
+  li div:active{
+    background-color: #a3abb1 !important;
+    
+  }
+  li a{
+      text-decoration: none;
+      color:#666;
+  }
+  .active{
+      background-color:white !important;      
+      border-color: #DDD !important;
+      color:#666 !important;
+      font-weight: bold;
+  }
+  #left button:hover{
+    text-decoration:underline !important;
+  }
+  #loader {
+    width: 15vw;
+    height: 10vh;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    top: 40vh;
+    left: 40vw;
+}
+#separator{
+  cursor: e-resize;
+}
+/*SCROLL BAR*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #b6b5b5; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.prewrap {
+  white-space: pre-line !important;
+}
