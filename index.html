@@ -47,21 +47,28 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Current state</td>
+                                <td>Current state <button id="current-state-button" aria-expanded="false" class="button"
+                                        onclick="currentStateInstructions(event)">Show
+                                        instructions</button></td>
                                 <td><a
                                         href="javascript: (function (){document.body.appendChild(document.createElement('script')).src='https://cdn.jsdelivr.net/gh/ernesto-code/a11y-tesing-scripts/current-state.js';})();">Current
                                         State</a>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Current focused element using "p" </td>
+                                <td>Current focused element using "p" <button id="current-focus-p-button"
+                                        aria-expanded="false" class="button"
+                                        onclick="currentFocusedPInstructions(event)">Show instructions</button> </td>
                                 <td><a
                                         href="javascript: (function (){document.body.appendChild(document.createElement('script')).src='https://cdn.jsdelivr.net/gh/ernesto-code/a11y-tesing-scripts/current-focused-element.js';})();">Current
                                         focused element (p)</a>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Current focused element when any key is pressed</td>
+                                <td>Current focused element when any key is pressed
+                                    <button id="current-focused-any-key-button" aria-expanded="false" class="button"
+                                        onclick="currentFocusedAnyKeyInstructions(event)">Show instructions</button>
+                                </td>
                                 <td>
                                     <a
                                         href="javascript: (function (){document.body.appendChild(document.createElement('script')).src='https://cdn.jsdelivr.net/gh/ernesto-code/a11y-tesing-scripts/current-focused-element-any-keypress.js';})();">Current
@@ -69,9 +76,8 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>Clone element <button id="clone-instructions-button"
-                                        style="background-color:white;color: cornflowerblue; height:30px;border: cornflowerblue thin solid;border-radius: 5px;"
-                                        onclick="cloneInstructions(event)">Show instructions</button>
+                                <td>Clone element <button id="clone-instructions-button" aria-expanded="false"
+                                        class="button" onclick="cloneInstructions(event)">Show instructions</button>
 
                                 </td>
                                 <td><a
@@ -94,6 +100,46 @@
                         </ol>
 
                     </div>
+                    <div id="current-focus-any-key" style="display:none">
+                        <h6>Show currently focused element when any key is pressed - Instructions:</h6>
+                        <ol>
+                            <li>Activate the "Current focused element when keypress" bookmark.</li>
+                            <li>Open the browser console.</li>
+
+                            <li>When navigating using Tab key (or any key is pressed), the currently focused element
+                                will be log in the console.
+                            </li>
+
+
+                        </ol>
+
+                    </div>
+                    <div id="current-focus-p" style="display:none">
+                        <h6>Show currently focused element when "p" key is pressed - Instructions:</h6>
+                        <ol>
+                            <li>Activate the "Current focused element (p)" bookmark.</li>
+                            <li>Open the browser console.</li>
+                            <li>When "p" key is pressed the currently focused element will be log in the console.</li>
+                        </ol>
+
+                    </div>
+                    <div id="current-state" style="display:none">
+                        <h6>Current state - Instructions:</h6>
+                        <ol>
+                            <li>Inspect the button to test.</li>
+                            <li>Add/Modify its class attribute's value, ensuring it contains the "a11ybutton" class.
+                            </li>
+                            <li>Open the browser console.</li>
+                            <li>Activate the "Current state" bookmark.</li>
+                            <li>Once the button is activated, the current state will be log in the console.
+                            </li>
+                        </ol>
+
+                    </div>
+
+
+
+
                 </div>
                 <div class="col-2"></div>
             </div>

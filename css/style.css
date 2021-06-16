@@ -57,11 +57,11 @@ option{
 }
 
 .button{
-  padding:10px !important;
+  background-color:white;
+  color: cornflowerblue; 
+  height:30px;
+  border: cornflowerblue thin solid;
   border-radius: 5px;
-  font-weight: bold;
-  font-size: 1.2em;
-  text-decoration: none !important;
 }
 .button-sm{
   padding:5px !important;
