@@ -69,7 +69,11 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>Clone element</td>
+                                <td>Clone element <button id="clone-instructions-button"
+                                        style="background-color: cornflowerblue;color:white; height:30px;border:none;border-radius: 5px;"
+                                        onclick="cloneInstructions(event)">Show instructions</button>
+
+                                </td>
                                 <td><a
                                         href="javascript: (function (){document.body.appendChild(document.createElement('script')).src='https://cdn.jsdelivr.net/gh/ernesto-code/a11y-tesing-scripts/clone-element.js';})();">Clone
                                         element</a>
@@ -77,6 +81,19 @@
                             </tr>
                         </tbody>
                     </table>
+                    <div id="clone" style="display:none">
+                        <h6>Clone element Instructions:</h6>
+                        <ol>
+                            <li>Inspect the code and find the dynamically added element's container.</li>
+                            <li>Add/Modify its class attribute's value, ensuring it contains the "a11ytest"
+                                class.</li>
+                            <li>Open the browser console.</li>
+                            <li>Activate the "Clone element" bookmark.</li>
+                            <li>Check that "Observed and Cloned .... Done!" has been log in console.</li>
+                            <li>The dynamically added element must be already included in the DOM.</li>
+                        </ol>
+
+                    </div>
                 </div>
                 <div class="col-2"></div>
             </div>
@@ -88,7 +105,7 @@
         </div>
     </main>
 
-
+    <script src="js/main.js"></script>
 </body>
 
 
